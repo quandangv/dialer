@@ -1,0 +1,99 @@
+2022-06-08
+Authorization=? Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXIxQGN1c3RvbWVyMS5jb20iLCJJRCI6IjIiLCJuYmYiOjE2NTQ2Mzc5ODEsImV4cCI6MTY1NDY1MjM4MSwiaWF0IjoxNjU0NjM3OTgxfQ.UAaowwqCOA_Wj6oFMFEiKwPdNp-vBWuKQu6P7RhYmaM
+ALERT
+ALERT
+Changed numbers to id 2250
+Press Enter to dismiss alarm.
+
+No serious issues, 6 online, 857 secs until change
+No serious issues, 6 online, 827 secs until change
+No serious issues, 7 online, 797 secs until change
+No serious issues, 7 online, 767 secs until change
+No serious issues, 6 online, 737 secs until change
+No serious issues, 6 online, 707 secs until change
+No serious issues, 5 online, 677 secs until change
+No serious issues, 5 online, 647 secs until change
+No serious issues, 5 online, 617 secs until change
+No serious issues, 5 online, 587 secs until change
+No serious issues, 5 online, 557 secs until change
+No serious issues, 5 online, 527 secs until change
+No serious issues, 5 online, 497 secs until change
+No serious issues, 5 online, 467 secs until change
+No serious issues, 5 online, 437 secs until change
+No serious issues, 5 online, 407 secs until change
+No serious issues, 5 online, 377 secs until change
+No serious issues, 6 online, 347 secs until change
+No serious issues, 6 online, 317 secs until change
+No serious issues, 6 online, 287 secs until change
+No serious issues, 6 online, 257 secs until change
+No serious issues, 6 online, 227 secs until change
+No serious issues, 6 online, 197 secs until change
+No serious issues, 6 online, 167 secs until change
+No serious issues, 6 online, 137 secs until change
+No serious issues, 6 online, 107 secs until change
+No serious issues, 6 online, 77 secs until change
+No serious issues, 6 online, 47 secs until change
+No serious issues, 6 online, 17 secs until change
+No serious issues, 6 online, -13 secs until change
+ALERT
+ALERT
+Changed numbers to id 2251
+Press Enter to dismiss alarm.
+Press Enter to dismiss alarm.
+
+No serious issues, 6 online, 856 secs until change
+No serious issues, 6 online, 826 secs until change
+No serious issues, 6 online, 796 secs until change
+No serious issues, 6 online, 766 secs until change
+No serious issues, 6 online, 736 secs until change
+No serious issues, 6 online, 706 secs until change
+No serious issues, 6 online, 676 secs until change
+No serious issues, 6 online, 646 secs until change
+No serious issues, 5 online, 616 secs until change
+No serious issues, 4 online, 586 secs until change
+No serious issues, 4 online, 556 secs until change
+No serious issues, 4 online, 526 secs until change
+CRITICAL Jason Marhsall is Break for 00:20:22
+Press Enter to dismiss alarm.
+Press Enter to dismiss alarm.
+
+Jason Marhsall is Break for 00:21:03
+No serious issues, 4 online, 466 secs until change
+Jason Marhsall is Break for 00:21:36
+No serious issues, 4 online, 436 secs until change
+Jason Marhsall is Break for 00:22:08
+No serious issues, 4 online, 406 secs until change
+Jason Marhsall is Break for 00:22:41
+No serious issues, 4 online, 376 secs until change
+Jason Marhsall is Break for 00:23:13
+No serious issues, 4 online, 346 secs until change
+Jason Marhsall is Break for 00:23:46
+No serious issues, 4 online, 316 secs until change
+Jason Marhsall is Break for 00:24:18
+No serious issues, 2 online, 286 secs until change
+Jason Marhsall is Break for 00:24:51
+No serious issues, 2 online, 256 secs until change
+Jason Marhsall is Break for 00:25:23
+No serious issues, 3 online, 226 secs until change
+Jason Marhsall is Break for 00:25:56
+No serious issues, 2 online, 196 secs until change
+Jason Marhsall is Break for 00:26:29
+No serious issues, 2 online, 166 secs until change
+Jason Marhsall is Break for 00:27:01
+No serious issues, 2 online, 136 secs until change
+Jason Marhsall is Break for 00:27:33
+No serious issues, 2 online, 106 secs until change
+Jason Marhsall is Break for 00:28:08
+No serious issues, 2 online, 76 secs until change
+Jason Marhsall is Break for 00:28:40
+No serious issues, 2 online, 46 secs until change
+Jason Marhsall is Break for 00:29:13
+No serious issues, 2 online, 16 secs until change
+Jason Marhsall is Break for 00:29:45
+No serious issues, 2 online, -14 secs until change
+Jason Marhsall is Break for 00:30:18
+ALERT
+ALERT
+Changed numbers to id 2253
+Press Enter to dismiss alarm.
+Press Enter to dismiss alarm.
