@@ -3,33 +3,33 @@ import concurrent.futures
 import requests
 import subprocess
 
-parser.add_argument('campaigns', metavar='CAMPAIGN', nargs='+', help='name of campaigns to pull recordings')
+#parser.add_argument('campaigns', metavar='CAMPAIGN', nargs='+', help='name of campaigns to pull recordings')
 args = parse_args()
 
 def get_all_agent_ids():
   return [str(agent['id']) for agent in request_json('Users/GetAllAgents')]
 
-import warnings
-def find_campaign_ids(names):
-  result = []
-  name_hits = []
-  response = request_json('Campaigns/GetAllCampaigns', 'POST', data='{"customerID": "1", "userID": "2"}')
-  for campaign in response:
-    if campaign['name'] in names:
-      name_hits.append(campaign['name'])
-      result.append(str(campaign['id']))
-  for name in names:
-    if not name in name_hits:
-      warnings.warn('Found no hit for campaign: ' + name)
-  return result
+#import warnings
+#def find_campaign_ids(names):
+#  result = []
+#  name_hits = []
+#  response = request_json('Campaigns/GetAllCampaigns', 'POST', data='{"customerID": "1", "userID": "2"}')
+#  for campaign in response:
+#    if campaign['name'] in names:
+#      name_hits.append(campaign['name'])
+#      result.append(str(campaign['id']))
+#  for name in names:
+#    if not name in name_hits:
+#      warnings.warn('Found no hit for campaign: ' + name)
+#  return result
 
-print(args.campaigns)
+#print(args.campaigns)
 agents_str = ','.join(get_all_agent_ids())
-campaigns_str = ','.join(find_campaign_ids(args.campaigns))
+#campaigns_str = ','.join(find_campaign_ids(args.campaigns))
 def get_history(dispositions):
   page_number = 1
   while True:
-    data = '{"selectedCampaignIDs":"'+campaigns_str+'","startDate":"'+day_start+'","endDate":"'+day_end+'","pageSize":25,"pageNumber":'+str(page_number)+',"selectedListsIDs":"","selectedDispositionIDs":"'+dispositions+'","selectedUserIDs":"'+agents_str+'","name":"","voicePhone":"","firstName":"","lastName":"","company":"","hasRecordings":true}'
+    data = '{"selectedCampaignIDs":"","startDate":"'+day_start+'","endDate":"'+day_end+'","pageSize":25,"pageNumber":'+str(page_number)+',"selectedListsIDs":"","selectedDispositionIDs":"'+dispositions+'","selectedUserIDs":"'+agents_str+'","name":"","voicePhone":"","firstName":"","lastName":"","company":"","hasRecordings":true}'
     response = request_json('History/GetHistoryByPage', 'POST', data=data)
     yield from response['results']
     page_number += 1

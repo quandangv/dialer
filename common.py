@@ -2,14 +2,14 @@
 from playsound import playsound
 from pytimedinput import timedKey
 def grab_attention():
-  while timedKey('Press Enter to dismiss alarm.', allowCharacters='\n')[1]:
+  while timedKey('Press any key to dismiss alarm.')[1]:
     playsound('ping.wav')
 
 import pytz
 import datetime
 remote_timezone = pytz.timezone('US/Mountain')
 today = datetime.date.today()
-#today = datetime.date.fromisoformat('2022-05-25')
+#today = datetime.date.fromisoformat('2022-06-09')
 print(today)
 day_start = datetime.datetime.combine(today, datetime.time(), pytz.utc).astimezone(remote_timezone).isoformat()[:19]+'Z'
 day_end = datetime.datetime.combine(today, datetime.time(23, 59, 59), pytz.utc).astimezone(remote_timezone).isoformat()[:19]+'Z'

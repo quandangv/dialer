@@ -8,6 +8,7 @@ high_wait = 120
 critical_wait = 240
 max_break = 1200
 max_other = 600
+max_blocked = 300
 
 prev_drop_percent = {}
 
@@ -44,7 +45,7 @@ def monitor(campaigns):
   sleep_time = 30
   campaign_check_interval = 900
   campaign_check_time = 0
-  number_change_interval = 850
+  number_change_interval = 800
   number_change_rand = 100
   number_change_time = number_change_interval
   number_change_time = 0
@@ -97,6 +98,13 @@ def monitor(campaigns):
               elif seconds > high_wait:
                 print(name, 'is', status, 'for', agent['lastStatusTime'])
                 raise_dial_ratio = True
+            elif status == 'BlockedForCallBack':
+              if seconds > max_blocked:
+                print('Kicking out', name)
+                response = request_json('Agent/KickOutAgent', 'POST', data='{"customerID":"1", "userID":2, "agentID":' + agent['userID'] + '}')
+                if response['baseResult']['result'] != 'Success':
+                  print('Failed to kick, response:', response)
+                  wrong = True
             else:
               wrong = seconds > max_other
             if wrong:
